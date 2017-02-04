@@ -1,37 +1,70 @@
-## Welcome to GitHub Pages
+## Installation
+### Install for Mac:<br/>
+`$ git clone https://github.com/ColdGrub1384/Yellow.git; Yellow/Build_for_Mac`
+<br/>
 
-You can use the [editor on GitHub](https://github.com/ColdGrub1384/YellowP/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Install for Linux:<br/>
+`$ git clone https://github.com/ColdGrub1384/Yellow.git; Yellow/Build_for_Linux`
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Yellow programming language
 
-### Markdown
+Yellow is a programming language coded with Python
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Why use Yellow
 
-```markdown
-Syntax highlighted code block
+Yellow translates a yl script to Python, so you can code Python and Yellow in same script, such as Markdown and HTML.</br>
+Yellow is very simple, you can use shortcuts such as ```$``` to auto import ```os``` and run a shell command, or ```log``` to write a string to log file for script, and get path with ```_LOG``` or print with colors: ```console.failed``` etc. <br/>
+```python
+// Comment
 
-# Header 1
-## Header 2
-### Header 3
+/* Multiline
+comment*/
 
-- Bulleted
-- List
+console {
+    "Hello World from Yellow "+_version
+}
+\\n
+name = keyboard{
+    "What's your name? "
+}
 
-1. Numbered
-2. List
+log{
+    "Question asked!"
+}
 
-**Bold** and _Italic_ and `Code` text
+Logclose{}
 
-[Link](url) and ![Image](src)
+from sys import platform
+if {platform == "linux" or platform == "linux2" or platform == "darwin"}:
+    ${"clear"}
+else:
+    ${"cls"}
+
+if {name == "Adrian"}:
+    console.okGreen {
+        "We have the same name!"
+    }
+else:
+    if {name == "Windows"}:
+        console.failed {
+            "Fuck you"
+        }
+        
+    else:
+        console.okBlue {
+            "My name is Adrian"
+        }
+ 
+console{_LOG}
+
+LOGFILE = open{
+    _LOG,"r"
+}
+
+console {
+    "LOG:\n"+LOGFILE.read{}
+}
+    
+\\n
+\\n
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ColdGrub1384/YellowP/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
