@@ -17,7 +17,7 @@ Yellow is a programming language coded with Python
 Yellow translates a yl script to Python, so you can code Python and Yellow in same script, such as Markdown and HTML.</br>
 Yellow is very simple, you can use shortcuts such as ```$``` to auto import ```os``` and run a shell command, or ```log``` to write a string to log file for script, and get path with ```_LOG``` or print with colors: ```console.failed``` etc. <br/>
 
-    ```python
+```python
     // Comment
 
     /* Multiline
@@ -70,4 +70,5 @@ Yellow is very simple, you can use shortcuts such as ```$``` to auto import ```o
     
     \\n
     \\n
-    ```
+    
+```
