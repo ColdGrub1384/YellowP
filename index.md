@@ -16,57 +16,56 @@ Yellow is a programming language coded with Python
 
 Yellow translates a yl script to Python, so you can code Python and Yellow in same script, such as Markdown and HTML.</br>
 Yellow is very simple, you can use shortcuts such as ```$``` to auto import ```os``` and run a shell command, or ```log``` to write a string to log file for script, and get path with ```_LOG``` or print with colors: ```console.failed``` etc. <br/>
-```python
-// Comment
 
-/* Multiline
-comment*/
+    // Comment
 
-console {
-    "Hello World from Yellow "+_version
-}
-\\n
-name = keyboard{
-    "What's your name? "
-}
+    /* Multiline
+    comment*/
 
-log{
-    "Question asked!"
-}
-
-Logclose{}
-
-from sys import platform
-if {platform == "linux" or platform == "linux2" or platform == "darwin"}:
-    ${"clear"}
-else:
-    ${"cls"}
-
-if {name == "Adrian"}:
-    console.okGreen {
-        "We have the same name!"
+    console {
+        "Hello World from Yellow "+_version
     }
-else:
-    if {name == "Windows"}:
-        console.failed {
-            "Fuck you"
-        }
-        
+    \\n
+    name = keyboard{
+        "What's your name? "
+    }
+
+    log{
+        "Question asked!"
+    }
+
+    Logclose{}
+
+    from sys import platform
+    if {platform == "linux" or platform == "linux2" or platform == "darwin"}
+        ${"clear"}
     else:
-        console.okBlue {
-            "My name is Adrian"
+        ${"cls"}
+
+    if {name == "Adrian"}:
+        console.okGreen {
+            "We have the same name!"
         }
+    else:
+        if {name == "Windows"}:
+            console.failed {
+                "Fuck you"
+            }
+        
+        else:
+            console.okBlue {
+                "My name is Adrian"
+            }
  
-console{_LOG}
+    console{_LOG}
 
-LOGFILE = open{
-    _LOG,"r"
-}
+    LOGFILE = open{
+         _LOG,"r"
+    }
 
-console {
-    "LOG:\n"+LOGFILE.read{}
-}
+    console {
+        "LOG:\n"+LOGFILE.read{}
+    }
     
-\\n
-\\n
-```
+    \\n
+    \\n
