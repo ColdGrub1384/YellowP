@@ -22,6 +22,7 @@ Yellow is very simple, you can use shortcuts such as ```$``` to auto import ```o
     /* Multiline
     comment*/
 
+    ```python
     console {
         "Hello World from Yellow "+_version
     }
@@ -69,3 +70,4 @@ Yellow is very simple, you can use shortcuts such as ```$``` to auto import ```o
     
     \\n
     \\n
+    ```
