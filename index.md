@@ -1,14 +1,16 @@
+## Yellow programming language
+
+Yellow is a programming language coded with Python
+
+
 ## Installation
+
 ### Install for Mac:<br/>
 `$ git clone https://github.com/ColdGrub1384/Yellow.git; Yellow/Build_for_Mac`
 <br/>
 
 ### Install for Linux:<br/>
 `$ git clone https://github.com/ColdGrub1384/Yellow.git; Yellow/Build_for_Linux`
-
-## Yellow programming language
-
-Yellow is a programming language coded with Python
 
 ### Why use Yellow
 
